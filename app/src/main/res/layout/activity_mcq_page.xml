@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="25dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:text="1. who are you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="18sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60px"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <RadioButton
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <RadioButton
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <RadioButton
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Previous"
+            android:id="@+id/btnPrevious"
+            android:layout_width="120dp"
+            android:enabled="false"
+            android:layout_marginRight="10dp"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:text="Next"
+            android:id="@+id/btnNext"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnPrevious"
+            android:layout_width="120dp"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:text="Submit"
+        android:id="@+id/submitMCQ"
+        android:layout_width="120dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+
+
+</LinearLayout>
